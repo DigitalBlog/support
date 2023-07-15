@@ -31,5 +31,18 @@
   })(document, window, 'BrevoConversations');
 </script>
 <!-- /Brevo Conversations {/literal} -->
+<script>
+  /* Anywhere after Brevo Conversations widget code */
+BrevoConversations('updateIntegrationData', {
+    email: 'cowardly_lion@yahoo.com', /* e-mail changed */
+    firstName: 'John', /* first name changed */
+    lastName: 'Doe', /* last name changed */
+    phone: null, /* phone number removed */
+    notes: 'Looking for courage...', /* notes property created */
+
+    /* any number of custom properties */
+    'trip wish list': 'Going to Oz with friends'
+});
+</script>
 </body>
 </html>
